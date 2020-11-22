@@ -1,0 +1,275 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root{
+    --maingreen:rgb(41, 128, 41);
+    --mainred:rgb(151, 0, 0);
+  }
+body{
+    background-image: radial-gradient(black  210px,rgb(22, 29, 24));
+}
+.header{
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    background: black;
+    align-items: center;  
+  }
+#title{
+  color: var(--maingreen);
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 40px;
+}
+#canvascontainer {
+  overflow: hidden;
+
+}
+#tryagain{
+  font-size: 30px;
+  position: absolute;
+  top: 500px;
+  padding: 10px;
+  background-color: black;
+  color: var(--maingreen);
+  border-radius: 10px;
+  border-style: solid;
+  display: none;
+  cursor: pointer;
+  left:124px;
+}
+#nextlevel{
+  font-size: 40px;
+  position: absolute;
+  top: 500px;
+  padding: 10px;
+  background-color: black;
+  border-radius: 13px;
+  border-style: solid;
+  display: none;
+  color: var(--maingreen);
+  cursor: pointer;
+  left:104px;
+}
+#playlevel{
+  font-size: 40px;
+  position: absolute;
+  top: 500px;
+  padding: 10px;
+  background-color:black;
+  border-radius: 13px;
+  border-style: solid;
+  color: var(--maingreen);
+  cursor: pointer;
+  left:104px;
+}
+#progressbar
+{
+  position: fixed;
+  width:300px;
+  height:20px;
+  border:4px solid black;
+  border-radius: 20%;
+  background-color: rgb(8, 8, 8);
+  display: block;
+}
+#colorprogress{
+  width:0%;
+  padding-top: 12px;
+  background-color: var(--maingreen);
+  display: block;
+}
+.settings{
+  position: absolute;
+  right:10px;
+  width:90px;
+  height:90px;
+  cursor: pointer;
+}
+.menubutton{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left:0px;
+  cursor: pointer;
+  transition-timing-function: linear;
+  transition-property: left;
+  transition-duration: 0.7s;
+
+}
+.menu{
+  position: fixed;
+  left:-300px;
+  width: 300px;
+  height:100% ;
+  top:100px;
+  background-color: black;
+  transition-timing-function: linear;
+  transition-property: left;
+  transition-duration: 0.7s;
+  align-items: center;
+}
+.menu1{
+      left:0px;
+}
+#selectlevel{
+  position: absolute;
+  left:40px;
+  top:120px;
+  font-size: 37px;
+  color: var(--maingreen);
+}
+.number{
+  position: absolute;
+  font-size:28px;
+  color: var(--maingreen);
+  border: 3px solid  var(--maingreen);
+  padding: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#a1{
+  padding:16px;
+  top:190px;
+  left:30px;
+}
+#a2{
+  padding:15px;
+  top:190px;
+  left:120px;
+}
+#a3{
+  top:190px;
+  left:210px;
+}
+#a4{
+  top:290px;
+  left:30px;
+}
+#a5{
+  top:290px;
+  left:120px;
+}
+#a6{
+  top:290px;
+  left:210px;
+}
+#a7{
+  top:390px;
+  left:30px;
+}
+#a8
+{
+  top:390px;
+  left:120px;
+}
+#a9
+{
+  top:390px;
+  left:210px;
+}
+#textlevel{
+  position: absolute;
+  top:800px;
+  width: 100%;
+  font-size:32px;
+  color: var(--maingreen);
+}
+#description{
+  position: absolute;
+  top:850px;
+  width: 100%;
+  font-size:22px;
+  color: var(--maingreen);
+}
+#textt{
+  display: none;
+}
+.noncircle{
+  position: relative;
+  top:-300px;
+  left:calc(100% - 400px);
+  background-color: black;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  display: block;
+  transition-duration: 1s;
+}
+.circle{
+  height: 800px;
+  width: 800px;
+}
+#circletext{
+    position: absolute;
+    color: var(--maingreen);
+    top: 66%;
+    left:25%;
+    cursor: pointer;
+}
+#transparency9{
+  position: absolute;
+  width: 400px;
+  height: 705px;
+  top:calc(12% + 100px);
+  left: calc(50% - 200px);
+  background: radial-gradient(at 185px 50px, rgb(0,0,0,0.32) 70px,  rgb(0,0,0,1) 30% );
+  display: none;
+  z-index: 10;
+}
+#onelifemode{
+  position: absolute;
+  font-size:28px;
+  color: var(--maingreen);
+  cursor: pointer;
+  top:650px;
+  left:25px;
+}
+#onelifetext{
+  position: absolute;
+  color:var(--mainred);
+  top:50px;
+  display: none;
+  font-size: 25px;
+}
+#onelifedescription{
+  position: absolute;
+  top:700px;
+  left:30px;
+  color:var(--maingreen);
+}
+#allowaudio{
+  position: fixed;
+  top:100px;
+  left:150px;
+  width: 200px;
+  height: 80px;
+  background-color:black;
+  color:var(--maingreen);
+  text-align: center;
+  border:solid black;
+  border-radius: 5px;
+  align-items: center;
+}
+#yes{
+  position: absolute;
+  top:35px;
+  left:40px;
+  color:black;
+  width: 50px;
+  height: 20px;
+}
+#no{
+  position: absolute;
+  top:35px;
+  right:40px;
+  color:black;
+  width: 50px;
+  height: 20px;
+}
