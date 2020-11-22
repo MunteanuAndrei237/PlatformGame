@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AnotherPlatformGame</title>
+    <style>
+        div{font-family: Comic Sans MS;}
+    </style>
+       <link rel="stylesheet" href="platformgame.css"></link>
+</head>
+
+<body>
+    <div id="allowaudio">Allow audio?
+        <button id="yes">Yes</button>
+        <button id="no">No</button>
+    </div>
+    <audio src="jumpsound2 .mp3" id="jumpsound"></audio>
+    <audio src="winningsound.mp3" id="winningsound"></audio>
+<audio src="losingsound.mp3" id="losingsound"></audio>
+<audio src="defaultsound.mp3" id="defaultsound" loop="true"></audio>
+<div id="onelifetext">You have only one life!</div>
+<div id=transparency9></div>
+    <div class="noncircle">
+        <h1 id="circletext">Audio:on</h1>
+        
+    </div>
+    <div class="header">
+        <div id="title">AnotherPlatformGame</div>
+        <img src="menu.png" class="menubutton">
+        <img src="settings.png" class="settings">
+    </div>
+    <div class="menu">
+        <div id=selectlevel>Select level</div>
+        <div class=number id="a1">1</div><div class=number id="a2">2</div><div class=number id="a3">3</div><div class=number id="a4">4</div><div class=number id="a5">5</div><div class=number id="a6">6</div><div class=number id="a7">7</div><div class=number id="a8">8</div><div class=number id="a9">9</div>
+        <div id="onelifemode">One-life mode:Off</div>
+        <div id="onelifedescription">If you turn on one-life mode,you'll<br> start again from level 1 evrytime you die.<br>Also, you can't skip levels anymore.</div>
+    </div>
+    
+    <div id="canvascontainer">    
+        <canvas id="game" width="400" height="10000"></canvas>
+        <div id="onelifetext">You have only one life</div>
+        <div id="textt">
+        <div id="textlevel"></div>
+        <div id="description"></div>
+        <div id=playlevel>Play level</div>
+    </div>
+        
+        <div id="tryagain">Try again</div>
+    <div id="nextlevel">Next level</div>
+    </div>
+    <div id="progressbar">
+ <div id ="colorprogress"></div>
+    </div>
+    <script src="platformgame.js" ></script>
+</body>
+</html>
